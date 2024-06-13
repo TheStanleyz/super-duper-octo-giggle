@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Minhas Mesas</a></li>
+          <li><a href="pesquisa.html">Pesquisa</a></li>
+          <li><a href="criar.html">Criar Mesa</a></li>
+          <li><a href="perfil.html">Perfil</a></li>
+          <li><a href="homepage.html">Pagina Inicial</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="perfil-main">
+      <h1>Perfil</h1>
+      <form
+        id="perfil-form"
+        enctype="multipart/form-data"
+        method="post"
+        action="server.php"
+      >
+        <input
+          type="text"
+          id="usuario-nome"
+          name="usuario-nome"
+          placeholder="Nome"
+          required
+        />
+        <input
+          type="email"
+          id="usuario-email"
+          name="usuario-email"
+          placeholder="Email"
+          required
+        />
+        <input
+          type="password"
+          id="usuario-senha"
+          name="usuario-senha"
+          placeholder="Senha"
+          required
+        />
+        <textarea
+          id="usuario-descricao"
+          name="usuario-descricao"
+          placeholder="Descrição"
+        ></textarea>
+        <input type="file" id="usuario-foto" name="usuario-foto" />
+        <button type="submit">Atualizar Perfil</button>
+      </form>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>

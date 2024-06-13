@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar Mesa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Minhas Mesas</a></li>
+          <li><a href="pesquisa.html">Pesquisa</a></li>
+          <li><a href="criar.html">Criar Mesa</a></li>
+          <li><a href="perfil.html">Perfil</a></li>
+          <li><a href="homepage.html">Pagina Inicial</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Criar Mesa</h1>
+      <form
+        id="criar-mesa-form"
+        enctype="multipart/form-data"
+        method="post"
+        action="server.php"
+      >
+        <input
+          type="text"
+          id="mesa-nome"
+          name="mesa-nome"
+          placeholder="Nome da mesa"
+          required
+        />
+        <textarea
+          id="mesa-tags"
+          name="mesa-tags"
+          placeholder="Tags (pressione Enter para adicionar)"
+          required
+        ></textarea>
+        <input
+          type="text"
+          id="mesa-horario"
+          name="mesa-horario"
+          placeholder="Horário de jogo"
+          required
+        />
+        <textarea
+          id="mesa-descricao"
+          name="mesa-descricao"
+          placeholder="Descrição da mesa"
+          required
+        ></textarea>
+        <input type="file" id="mesa-imagem" name="mesa-imagem" required />
+        <button type="submit">Adicionar Mesa</button>
+      </form>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
